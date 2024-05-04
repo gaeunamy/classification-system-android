@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "85439472044",
+    "project_id": "apple-detection-e8c67",
+    "storage_bucket": "apple-detection-e8c67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85439472044:android:50fab4cc70bed641145a09",
+        "android_client_info": {
+          "package_name": "com.example.apple_detection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkzYQBNkhwqv7wbprbQByV7i8DOwnWqgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85439472044:android:7c5af3f1f92e606c145a09",
+        "android_client_info": {
+          "package_name": "com.example.fruit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkzYQBNkhwqv7wbprbQByV7i8DOwnWqgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
