@@ -1,0 +1,6 @@
+com.example.fruit.test.app-androidTest-0 C:\Fruit\app\build\generated\res\resValues\androidTest\debug
+com.example.fruit.test.app-mergeDebugAndroidTestResources-1 C:\Fruit\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.fruit.test.app-mergeDebugAndroidTestResources-2 C:\Fruit\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.fruit.test.app-debugAndroidTest-3 C:\Fruit\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.example.fruit.test.app-core-1.5.0-4 C:\Users\사용자\.gradle\caches\transforms-3\e936847350166d59cacf3ad977a52a8e\transformed\core-1.5.0\res
+com.example.fruit.test.app-annotation-experimental-1.4.0-5 C:\Users\사용자\.gradle\caches\transforms-3\f0c93f5ffcc7b0cba82e256515a5542e\transformed\annotation-experimental-1.4.0\res

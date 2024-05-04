@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">85439472044</string>
+    <string name="google_api_key" translatable="false">AIzaSyBkzYQBNkhwqv7wbprbQByV7i8DOwnWqgs</string>
+    <string name="google_app_id" translatable="false">1:85439472044:android:7c5af3f1f92e606c145a09</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBkzYQBNkhwqv7wbprbQByV7i8DOwnWqgs</string>
+    <string name="google_storage_bucket" translatable="false">apple-detection-e8c67.appspot.com</string>
+    <string name="project_id" translatable="false">apple-detection-e8c67</string>
+</resources>

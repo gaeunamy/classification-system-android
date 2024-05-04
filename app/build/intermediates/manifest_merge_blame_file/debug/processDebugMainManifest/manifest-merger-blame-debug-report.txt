@@ -1,0 +1,242 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.fruit"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="21"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:23:5-79
+13-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:23:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:24:5-67
+14-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:24:22-64
+15
+16    <permission
+16-->[androidx.core:core:1.13.0] C:\Users\사용자\.gradle\caches\transforms-3\0807ceca04e40eaadaecf39acb6d4826\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.fruit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.13.0] C:\Users\사용자\.gradle\caches\transforms-3\0807ceca04e40eaadaecf39acb6d4826\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.13.0] C:\Users\사용자\.gradle\caches\transforms-3\0807ceca04e40eaadaecf39acb6d4826\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.fruit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.13.0] C:\Users\사용자\.gradle\caches\transforms-3\0807ceca04e40eaadaecf39acb6d4826\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.13.0] C:\Users\사용자\.gradle\caches\transforms-3\0807ceca04e40eaadaecf39acb6d4826\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->C:\Fruit\app\src\main\AndroidManifest.xml:5:5-32:19
+23        android:allowBackup="true"
+23-->C:\Fruit\app\src\main\AndroidManifest.xml:6:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.13.0] C:\Users\사용자\.gradle\caches\transforms-3\0807ceca04e40eaadaecf39acb6d4826\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->C:\Fruit\app\src\main\AndroidManifest.xml:7:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->C:\Fruit\app\src\main\AndroidManifest.xml:8:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Fruit\app\src\main\AndroidManifest.xml:9:9-43
+30        android:label="@string/app_name"
+30-->C:\Fruit\app\src\main\AndroidManifest.xml:10:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Fruit\app\src\main\AndroidManifest.xml:11:9-54
+32        android:supportsRtl="true"
+32-->C:\Fruit\app\src\main\AndroidManifest.xml:12:9-35
+33        android:theme="@style/Theme.Fruit" >
+33-->C:\Fruit\app\src\main\AndroidManifest.xml:13:9-43
+34
+35        <!-- 스플래시 화면 액티비티 추가 -->
+36        <activity
+36-->C:\Fruit\app\src\main\AndroidManifest.xml:17:9-23:20
+37            android:name="com.example.fruit.SplashActivity"
+37-->C:\Fruit\app\src\main\AndroidManifest.xml:17:19-49
+38            android:exported="true" >
+38-->C:\Fruit\app\src\main\AndroidManifest.xml:18:13-36
+39            <intent-filter>
+39-->C:\Fruit\app\src\main\AndroidManifest.xml:19:13-22:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Fruit\app\src\main\AndroidManifest.xml:20:17-69
+40-->C:\Fruit\app\src\main\AndroidManifest.xml:20:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Fruit\app\src\main\AndroidManifest.xml:21:17-77
+42-->C:\Fruit\app\src\main\AndroidManifest.xml:21:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <!-- 메인 액티비티 추가 -->
+47        <activity android:name="com.example.fruit.MainActivity" />
+47-->C:\Fruit\app\src\main\AndroidManifest.xml:26:9-50
+47-->C:\Fruit\app\src\main\AndroidManifest.xml:26:19-47
+48
+49        <!-- 나머지 액티비티 추가 -->
+50        <activity android:name="com.example.fruit.AllData" />
+50-->C:\Fruit\app\src\main\AndroidManifest.xml:29:9-45
+50-->C:\Fruit\app\src\main\AndroidManifest.xml:29:19-42
+51        <activity android:name="com.example.fruit.NormalData" />
+51-->C:\Fruit\app\src\main\AndroidManifest.xml:30:9-48
+51-->C:\Fruit\app\src\main\AndroidManifest.xml:30:19-45
+52        <activity android:name="com.example.fruit.RottenData" />
+52-->C:\Fruit\app\src\main\AndroidManifest.xml:31:9-48
+52-->C:\Fruit\app\src\main\AndroidManifest.xml:31:19-45
+53
+54        <service
+54-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:27:9-36:19
+55            android:name="com.google.firebase.components.ComponentDiscoveryService"
+55-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:28:13-84
+56            android:directBootAware="true"
+56-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+57            android:exported="false" >
+57-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:29:13-37
+58            <meta-data
+58-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:30:13-32:85
+59                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+59-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:31:17-118
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:32:17-82
+61            <meta-data
+61-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:33:13-35:85
+62                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+62-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:34:17-107
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.firebase:firebase-storage:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\324bad62657f873f26537d2cd74f0337\transformed\firebase-storage-21.0.0\AndroidManifest.xml:35:17-82
+64            <meta-data
+64-->[com.google.firebase:firebase-database:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\d75b9a51c78927b383f63aeda44ce7b6\transformed\firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+65                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+65-->[com.google.firebase:firebase-database:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\d75b9a51c78927b383f63aeda44ce7b6\transformed\firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.firebase:firebase-database:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\d75b9a51c78927b383f63aeda44ce7b6\transformed\firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+67            <meta-data
+67-->[com.google.firebase:firebase-database:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\d75b9a51c78927b383f63aeda44ce7b6\transformed\firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+68                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+68-->[com.google.firebase:firebase-database:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\d75b9a51c78927b383f63aeda44ce7b6\transformed\firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[com.google.firebase:firebase-database:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\d75b9a51c78927b383f63aeda44ce7b6\transformed\firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+70            <meta-data
+70-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\사용자\.gradle\caches\transforms-3\945d6f9ac0f612f7255ce60ac2c15a2b\transformed\firebase-appcheck-17.1.0\AndroidManifest.xml:25:13-27:85
+71                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+71-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\사용자\.gradle\caches\transforms-3\945d6f9ac0f612f7255ce60ac2c15a2b\transformed\firebase-appcheck-17.1.0\AndroidManifest.xml:26:17-120
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\사용자\.gradle\caches\transforms-3\945d6f9ac0f612f7255ce60ac2c15a2b\transformed\firebase-appcheck-17.1.0\AndroidManifest.xml:27:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\사용자\.gradle\caches\transforms-3\945d6f9ac0f612f7255ce60ac2c15a2b\transformed\firebase-appcheck-17.1.0\AndroidManifest.xml:28:13-30:85
+74                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+74-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\사용자\.gradle\caches\transforms-3\945d6f9ac0f612f7255ce60ac2c15a2b\transformed\firebase-appcheck-17.1.0\AndroidManifest.xml:29:17-117
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\사용자\.gradle\caches\transforms-3\945d6f9ac0f612f7255ce60ac2c15a2b\transformed\firebase-appcheck-17.1.0\AndroidManifest.xml:30:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\b8d35ff60448b93e08f0e7b17d458853\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+77                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+77-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\b8d35ff60448b93e08f0e7b17d458853\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\b8d35ff60448b93e08f0e7b17d458853\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+80                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+80-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+82        </service>
+83
+84        <activity
+84-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\사용자\.gradle\caches\transforms-3\99e211eb86e152252539a708ead78e7f\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+85            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+85-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\사용자\.gradle\caches\transforms-3\99e211eb86e152252539a708ead78e7f\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\사용자\.gradle\caches\transforms-3\99e211eb86e152252539a708ead78e7f\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\사용자\.gradle\caches\transforms-3\99e211eb86e152252539a708ead78e7f\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+88
+89        <provider
+89-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+90            android:name="com.google.firebase.provider.FirebaseInitProvider"
+90-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+91            android:authorities="com.example.fruit.firebaseinitprovider"
+91-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+92            android:directBootAware="true"
+92-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+93            android:exported="false"
+93-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+94            android:initOrder="100" />
+94-->[com.google.firebase:firebase-common:21.0.0] C:\Users\사용자\.gradle\caches\transforms-3\e729a3b94f3269d791dcb951602a7126\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+95        <provider
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\사용자\.gradle\caches\transforms-3\9ad61434445fb90fc7216b1df7ca5f0a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+96            android:name="androidx.startup.InitializationProvider"
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\사용자\.gradle\caches\transforms-3\9ad61434445fb90fc7216b1df7ca5f0a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+97            android:authorities="com.example.fruit.androidx-startup"
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\사용자\.gradle\caches\transforms-3\9ad61434445fb90fc7216b1df7ca5f0a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+98            android:exported="false" >
+98-->[androidx.emoji2:emoji2:1.2.0] C:\Users\사용자\.gradle\caches\transforms-3\9ad61434445fb90fc7216b1df7ca5f0a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+99            <meta-data
+99-->[androidx.emoji2:emoji2:1.2.0] C:\Users\사용자\.gradle\caches\transforms-3\9ad61434445fb90fc7216b1df7ca5f0a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+100-->[androidx.emoji2:emoji2:1.2.0] C:\Users\사용자\.gradle\caches\transforms-3\9ad61434445fb90fc7216b1df7ca5f0a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+101                android:value="androidx.startup" />
+101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\사용자\.gradle\caches\transforms-3\9ad61434445fb90fc7216b1df7ca5f0a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+102            <meta-data
+102-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\사용자\.gradle\caches\transforms-3\a1086089524a1bcdb0f36e6e4a6fb084\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+103-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\사용자\.gradle\caches\transforms-3\a1086089524a1bcdb0f36e6e4a6fb084\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+104                android:value="androidx.startup" />
+104-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\사용자\.gradle\caches\transforms-3\a1086089524a1bcdb0f36e6e4a6fb084\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+105            <meta-data
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+107                android:value="androidx.startup" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+108        </provider>
+109
+110        <meta-data
+110-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\사용자\.gradle\caches\transforms-3\2f95457ad1d42a42d4e5bdc7292a5873\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+111            android:name="com.google.android.gms.version"
+111-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\사용자\.gradle\caches\transforms-3\2f95457ad1d42a42d4e5bdc7292a5873\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+112            android:value="@integer/google_play_services_version" />
+112-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\사용자\.gradle\caches\transforms-3\2f95457ad1d42a42d4e5bdc7292a5873\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+113
+114        <receiver
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+115            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+116            android:directBootAware="false"
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+117            android:enabled="true"
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+118            android:exported="true"
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+119            android:permission="android.permission.DUMP" >
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+121                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+122            </intent-filter>
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+124                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+125            </intent-filter>
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+127                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+128            </intent-filter>
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+130                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\사용자\.gradle\caches\transforms-3\792861cc62831b28dd0628f3082240c6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+131            </intent-filter>
+132        </receiver>
+133    </application>
+134
+135</manifest>

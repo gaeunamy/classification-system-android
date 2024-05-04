@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\anim_fadein.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\anim\\fadein.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\layout_swipe_refresh.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\layout\\swipe_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\layout_activity_recycle.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\layout\\activity_recycle.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\drawable_sync.png.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\drawable\\sync.png"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\drawable_btn_round.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\drawable\\btn_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\anim_fadeout.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\anim\\fadeout.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\layout_image_list_normal.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\layout\\image_list_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\layout_activity_intro.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\layout\\activity_intro.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.fruit.app-debug-5:/anim_fadein.xml.flat",
+        "source": "com.example.fruit.app-main-7:/anim/fadein.xml"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\drawable_intro_image.png.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\drawable\\intro_image.png"
+    },
+    {
+        "merged": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-debug-5:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\사용자\\.gradle\\daemon\\8.4\\com.example.fruit.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    }
+]

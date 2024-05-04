@@ -1,0 +1,3 @@
+com.example.fruit.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
