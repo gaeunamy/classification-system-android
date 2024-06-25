@@ -2,42 +2,32 @@ package com.example.fruit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.content.Intent;
-import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import com.google.firebase.FirebaseApp;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Toolbar 설정
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // 툴바 제목 변경
-        getSupportActionBar().setTitle("데이터 판별");
-
+        // 액션바 제목 설정
+        getSupportActionBar().setTitle("실시간 과일 분류 시스템");
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
+
+        // Firebase 초기화
+        FirebaseApp.initializeApp(this);
 
         Button allButton = findViewById(R.id.btn_all);
         allButton.setOnClickListener(new View.OnClickListener() {
@@ -71,8 +61,16 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             }
         });
+
+        Button statistics = findViewById(R.id.statistics);
+        statistics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // GraphActivity.java로 이동
+                Intent statisticsIntent = new Intent(MainActivity.this, GraphActivity.class);
+                startActivity(statisticsIntent);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+            }
+        });
     }
 }
-
-
-

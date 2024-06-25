@@ -13,8 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
-        app:titleTextColor="?attr/colorSurface"
-        app:navigationIcon="?attr/homeAsUpIndicator" />
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/white"
+        app:titleTextColor="?attr/colorSurface" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
@@ -32,12 +33,12 @@
     <!-- 새로고침 버튼 -->
     <ImageView
         android:id="@+id/refreshButton"
-        android:layout_width="34dp"
-        android:layout_height="31dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="15dp"
-        android:src="@drawable/sync" />
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/refresh_white" />
 
 </RelativeLayout>

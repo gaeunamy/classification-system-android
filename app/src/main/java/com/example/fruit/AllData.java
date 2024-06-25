@@ -1,33 +1,24 @@
 package com.example.fruit;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.ListResult;
 import com.google.firebase.storage.StorageReference;
-
 import java.util.ArrayList;
-import java.util.function.Consumer;
+import java.util.Collections;
 
 public class AllData extends AppCompatActivity {
 
@@ -59,57 +50,91 @@ public class AllData extends AppCompatActivity {
             }
         });
 
-        loadImagesFromFirebase(recyclerView);
+        loadImagesFromFirebase();
     }
 
-    private void loadImagesFromFirebase(RecyclerView recyclerView) {
-        FirebaseStorage.getInstance().getReference().child("rasp_detect_image")
-                .listAll().addOnSuccessListener(new OnSuccessListener<ListResult>() {
+    private void loadImagesFromFirebase() {
+        ArrayList<DataItem> dataList = new ArrayList<>();
+        fetchImagesFromFolder("rasp_detect_image/normal_apple", dataList, new OnCompleteListener() {
+            @Override
+            public void onComplete() {
+                fetchImagesFromFolder("rasp_detect_image/rotten_apple", dataList, new OnCompleteListener() {
                     @Override
-                    public void onSuccess(ListResult listResult) {
-                        ArrayList<Image> arrayList = new ArrayList<>();
-                        ImageAdapter adapter = new ImageAdapter(AllData.this, arrayList);
-                        adapter.setOnItemClickListener(new ImageAdapter.OnItemClickListener() {
+                    public void onComplete() {
+                        // 리스트를 날짜와 시간 순으로 정렬
+                        Collections.sort(dataList);
+
+                        // 정렬된 순서대로 번호 부여
+                        int number = 1;
+                        for (DataItem item : dataList) {
+                            item.setNumber(number++);
+                        }
+
+                        DataAdapter adapter = new DataAdapter(AllData.this, dataList);
+                        recyclerView.setAdapter(adapter);
+                        recyclerView.setLayoutManager(new LinearLayoutManager(AllData.this));
+
+                        adapter.setOnItemClickListener(new DataAdapter.OnItemClickListener() {
                             @Override
-                            public void onClick(Image image) {
-                                Intent intent = new Intent(Intent.ACTION_VIEW);
-                                intent.setDataAndType(Uri.parse(image.getUrl()), "image/*");
+                            public void onClick(DataItem dataItem) {
+                                Intent intent = new Intent(AllData.this, ImageViewerActivity.class);
+                                intent.putExtra("imageName", dataItem.getFileName());
                                 startActivity(intent);
                             }
                         });
-                        recyclerView.setAdapter(adapter);
+                    }
+                });
+            }
+        });
+    }
 
-                        // 데이터를 역순으로 가져와서 리스트에 추가
-                        for (int i = listResult.getItems().size() - 1; i >= 0; i--) {
-                            StorageReference storageReference = listResult.getItems().get(i);
-                            Image image = new Image();
-                            image.setName(storageReference.getName());
-                            storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                @Override
-                                public void onSuccess(Uri uri) {
-                                    String url = uri.toString();
-                                    image.setUrl(url);
-                                    arrayList.add(image);
-                                    adapter.notifyDataSetChanged();
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Toast.makeText(AllData.this, "이미지를 로드하는 데 오류가 발생했습니다", Toast.LENGTH_SHORT).show();
-                                }
-                            });
+    private void fetchImagesFromFolder(String folderPath, ArrayList<DataItem> dataList, OnCompleteListener listener) {
+        FirebaseStorage.getInstance().getReference().child(folderPath)
+                .listAll().addOnSuccessListener(new OnSuccessListener<ListResult>() {
+                    @Override
+                    public void onSuccess(ListResult listResult) {
+                        for (StorageReference storageReference : listResult.getItems()) {
+                            String fileName = storageReference.getName();
+                            String dateTime = extractDateTimeFromFileName(fileName);
+                            dataList.add(new DataItem(0, fileName, dateTime)); // 일단 0으로 초기화
                         }
+                        listener.onComplete();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(AllData.this, "이미지를 로드하는 데 오류가 발생했습니다", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AllData.this, "이미지를 로드하는 데 오류가 발생했습니다: " + folderPath, Toast.LENGTH_SHORT).show();
+                        listener.onComplete();
                     }
                 });
     }
 
+    private String extractDateTimeFromFileName(String fileName) {
+        // 파일 이름에서 확장자 ".jpg"를 제거합니다.
+        String nameWithoutExtension = fileName.replace(".jpg", "");
+
+        // 파일 이름에서 날짜와 시간을 추출하는 로직을 작성합니다.
+        // 파일 이름이 normal_apple_2023-12-25_13:46:48 형식이라면 "_"를 기준으로 나눈 후 세 번째 부분부터 추출합니다.
+        String[] parts = nameWithoutExtension.split("_");
+        StringBuilder dateTimeBuilder = new StringBuilder();
+        if (parts.length >= 3) {
+            // Date와 Time을 따로 표시하기 위해 인덱스 2에서 Date를 추출하고, 인덱스 3부터는 Time을 추출합니다.
+            dateTimeBuilder.append(parts[2]); // Date
+            dateTimeBuilder.append("\n");
+            for (int i = 3; i < parts.length; i++) {
+                dateTimeBuilder.append(parts[i]);
+                if (i < parts.length - 1) {
+                    dateTimeBuilder.append("_"); // 시간 부분 간에 "_"로 연결
+                }
+            }
+            return dateTimeBuilder.toString();
+        } else {
+            return "날짜 없음";
+        }
+    }
+
     private void refreshData() {
-        loadImagesFromFirebase(recyclerView);
+        loadImagesFromFirebase();
     }
 
     @Override
@@ -118,9 +143,14 @@ public class AllData extends AppCompatActivity {
 
         if (id == android.R.id.home) {
             onBackPressed();
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private interface OnCompleteListener {
+        void onComplete();
     }
 }

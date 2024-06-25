@@ -2,7 +2,7 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="app">
+      <entry key="APP">
         <State>
           <targetSelectedWithDropDown>
             <Target>
@@ -10,23 +10,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\사용자\.android\avd\Pixel_2_API_33.avd" />
+                  <value value="C:\AndroidAVD\Pixel_2_API_29.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-05-03T16:47:17.405747800Z" />
-          <targetsSelectedWithDialog>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\사용자\.android\avd\Galaxy_S6.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetsSelectedWithDialog>
+          <timeTargetWasSelectedWithDropDown value="2024-05-08T08:20:47.964492500Z" />
         </State>
       </entry>
     </value>

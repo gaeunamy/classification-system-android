@@ -8,18 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.storage.FirebaseStorage;
@@ -27,7 +21,8 @@ import com.google.firebase.storage.ListResult;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
-import java.util.function.Consumer;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class NormalData extends AppCompatActivity {
 
@@ -71,17 +66,25 @@ public class NormalData extends AppCompatActivity {
                         adapter.setOnItemClickListener(new ImageAdapter.OnItemClickListener() {
                             @Override
                             public void onClick(Image image) {
-                                // 이미지 클릭 시 이미지 보기 액티비티로 이동
-                                Intent intent = new Intent(Intent.ACTION_VIEW);
-                                intent.setDataAndType(Uri.parse(image.getUrl()), "image/*");
+                                // 이미지를 클릭하면 ImageViewerActivity를 시작하고 이미지 URL을 전달합니다.
+                                Intent intent = new Intent(NormalData.this, ImageViewerActivity.class);
+                                intent.putExtra("imageUrl", image.getUrl());
+                                intent.putExtra("imageName", image.getName());
                                 startActivity(intent);
                             }
                         });
                         recyclerView.setAdapter(adapter);
 
-                        // 데이터를 역순으로 가져와서 리스트에 추가
-                        for (int i = listResult.getItems().size() - 1; i >= 0; i--) {
-                            StorageReference storageReference = listResult.getItems().get(i);
+                        // 데이터를 이름 기준으로 내림차순 정렬하여 리스트에 추가
+                        ArrayList<StorageReference> storageReferences = new ArrayList<>(listResult.getItems());
+                        Collections.sort(storageReferences, new Comparator<StorageReference>() {
+                            @Override
+                            public int compare(StorageReference o1, StorageReference o2) {
+                                return o2.getName().compareTo(o1.getName()); // 내림차순 정렬
+                            }
+                        });
+
+                        for (StorageReference storageReference : storageReferences) {
                             Image image = new Image();
                             image.setName(storageReference.getName());
                             storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -119,6 +122,7 @@ public class NormalData extends AppCompatActivity {
 
         if (id == android.R.id.home) {
             onBackPressed();
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             return true;
         }
 

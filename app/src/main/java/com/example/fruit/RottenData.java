@@ -71,9 +71,10 @@ public class RottenData extends AppCompatActivity {
                         adapter.setOnItemClickListener(new ImageAdapter.OnItemClickListener() {
                             @Override
                             public void onClick(Image image) {
-                                // 이미지 클릭 시 이미지 보기 액티비티로 이동
-                                Intent intent = new Intent(Intent.ACTION_VIEW);
-                                intent.setDataAndType(Uri.parse(image.getUrl()), "image/*");
+                                // 이미지를 클릭하면 ImageViewerActivity를 시작하고 이미지 URL을 전달합니다.
+                                Intent intent = new Intent(RottenData.this, ImageViewerActivity.class);
+                                intent.putExtra("imageUrl", image.getUrl());
+                                intent.putExtra("imageName", image.getName());
                                 startActivity(intent);
                             }
                         });
@@ -119,6 +120,7 @@ public class RottenData extends AppCompatActivity {
 
         if (id == android.R.id.home) {
             onBackPressed();
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             return true;
         }
 

@@ -29,6 +29,11 @@
         <activity android:name=".AllData" />
         <activity android:name=".NormalData" />
         <activity android:name=".RottenData" />
+        <activity android:name=".ImageViewerActivity" />
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".GraphActivity" />
+        <activity android:name=".DateSelectionActivity" />
+
     </application>
 
 </manifest>
