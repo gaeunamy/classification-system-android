@@ -12,7 +12,12 @@ YOLOv5를 이용한 과일 분류 시스템을 통해 자동으로 사과를 분
 <br/>
 
 ## 🎞 Demo  
-[시연영상 보기](https://www.youtube.com)  
+
+
+https://github.com/user-attachments/assets/c9e87c14-217e-42b2-b99c-264e4906792c
+
+
+
 <br/>
 
 ## ⭐ 주요 기능
