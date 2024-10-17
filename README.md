@@ -21,26 +21,73 @@ YOLOv5를 이용한 과일 분류 시스템을 통해 자동으로 사과를 분
   <tr>
     <td style="text-align: center; width: 50%; border: none;">
       <img src="https://github.com/user-attachments/assets/4acc02cd-dc4b-4b19-86c7-45bedd9d961b" alt="Image 1" width="100%" />
-      <p>인트로 화면</p>
     </td>
     <td style="text-align: center; width: 50%; border: none;">
       <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 2" width="100%" />
-      <p>메인 화면</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center; border: none;">
+      <p style="text-align: center;">전체 통계</p>
+    </td>
+    <td style="text-align: center; border: none;">
+      <p style="text-align: center;">일별 통계</p>
+    </td>
+  </tr>
+</table>
+<br/>
+
+- **상태별 사과 통계**: 분류 작업을 거친 전체/정상/불량 사과의 통계를 그래프로 제공하며, 날짜별 통계 제공
+<table style="width: 100%; border: none; border-spacing: 10px;">
+  <tr>
+    <td style="text-align: center; width: 50%; border: none;">
+      <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 1" width="100%" />
+    </td>
+    <td style="text-align: center; width: 50%; border: none;">
+      <img src="https://github.com/user-attachments/assets/4ea0a1a6-5f78-48c0-993b-137f9b757787" alt="Image 2" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center; border: none;">
+      <p style="text-align: center;">전체 통계</p>
+    </td>
+    <td style="text-align: center; border: none;">
+      <p style="text-align: center;">일별 통계</p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+- **이미지 데이터 및 정확도 확인**: 촬영된 사과 이미지 목록에서 각 항목 선택 시 큰 이미지를 확인할 수 있음
+<table style="width: 100%; border: none; border-spacing: 10px;">
+  <tr>
+    <td style="text-align: center; width: 50%; border: none;">
+      <img src="https://github.com/user-attachments/assets/8d5bfd20-86aa-449e-9675-bd3795bb75c3" alt="Image 1" width="100%" />
+    </td>
+    <td style="text-align: center; width: 50%; border: none;">
+      <img src="https://github.com/user-attachments/assets/2299569a-0c7b-4fae-af66-848015c9868a" alt="Image 2" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center; border: none;">
+      <p style="text-align: center;">전체 통계</p>
+    </td>
+    <td style="text-align: center; border: none;">
+      <p style="text-align: center;">일별 통계</p>
     </td>
   </tr>
 </table>
 
 
-- **상태별 사과 통계**: 분류 작업을 거친 전체/정상/불량 사과의 통계를 그래프로 제공하며, 날짜별 통계 제공
-![2](https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555)
-- **이미지 데이터 및 정확도 확인**: 촬영된 사과 이미지 목록에서 각 항목 선택 시 큰 이미지를 확인할 수 있음
+
 
 <br/>
 
 ## 🔧 Stack
 **Frontend**  
 - **Language**: Java, XML  
-- **Tools**: Android Studio  
+- **Tools**: Android Studio(Iguana | 2023.2.1 Patch 1)  
 - **Deploy**: Firebase (Storage, Real-Time Database)  
 <br/>
 
