@@ -21,11 +21,11 @@ YOLOv5를 이용한 과일 분류 시스템을 통해 자동으로 사과를 분
   <tr>
     <td style="text-align: center; width: 50%; border: none;">
       <img src="https://github.com/user-attachments/assets/4acc02cd-dc4b-4b19-86c7-45bedd9d961b" alt="Image 1" width="100%" />
-      <p>캡션 1</p>
+      <p>인트로 화면</p>
     </td>
     <td style="text-align: center; width: 50%; border: none;">
       <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 2" width="100%" />
-      <p>캡션 2</p>
+      <p>메인 화면</p>
     </td>
   </tr>
 </table>
