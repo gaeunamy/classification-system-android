@@ -17,13 +17,13 @@ YOLOv5를 이용한 과일 분류 시스템을 통해 자동으로 사과를 분
 
 ## ⭐ 주요 기능
 - **메인화면**: 통계, 전체 데이터, 정상 데이터, 불량 데이터로 구성
-  <div style="display: flex; justify-content: space-around;">
-  <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/4acc02cd-dc4b-4b19-86c7-45bedd9d961b" alt="Image 1" width="300" />
+<div style="display: flex; justify-content: space-between;">
+  <div style="text-align: center; width: 48%;">
+    <img src="https://github.com/user-attachments/assets/4acc02cd-dc4b-4b19-86c7-45bedd9d961b" alt="Image 1" width="100%" />
     <p>캡션 1</p>
   </div>
-  <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 2" width="300" />
+  <div style="text-align: center; width: 48%;">
+    <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 2" width="100%" />
     <p>캡션 2</p>
   </div>
 </div>
