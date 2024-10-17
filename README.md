@@ -16,7 +16,18 @@ YOLOv5를 이용한 과일 분류 시스템을 통해 자동으로 사과를 분
 <br/>
 
 ## ⭐ 주요 기능
-- **실시간 모니터링**: 서버에서 촬영 중인 영상을 MJPG-Streamer와 연동하여 앱에서 실시간 확인
+- **메인화면**: 통계, 전체 데이터, 정상 데이터, 불량 데이터로 구성
+  <div style="display: flex; justify-content: space-around;">
+  <div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/4acc02cd-dc4b-4b19-86c7-45bedd9d961b" alt="Image 1" width="300" />
+    <p>캡션 1</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 2" width="300" />
+    <p>캡션 2</p>
+  </div>
+</div>
+
 - **상태별 사과 통계**: 분류 작업을 거친 전체/정상/불량 사과의 통계를 그래프로 제공하며, 날짜별 통계 제공
 ![2](https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555)
 - **이미지 데이터 및 정확도 확인**: 촬영된 사과 이미지 목록에서 각 항목 선택 시 큰 이미지를 확인할 수 있음
