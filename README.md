@@ -20,89 +20,88 @@ https://github.com/user-attachments/assets/c9e87c14-217e-42b2-b99c-264e4906792c
 
 <br/>
 
-## ⭐ 주요 기능
+# ⭐ 주요 기능
+
 - **메인화면**: 통계, 전체 데이터, 정상 데이터, 불량 데이터로 구성
-<table style="width: 100%; border: none; border-spacing: 10px;">
+
+<table>
   <tr>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/575e07b7-aceb-4565-993a-a0b871bf5663" alt="Image 1" width="100%" />
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/575e07b7-aceb-4565-993a-a0b871bf5663" width="75%" />
     </td>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/20810cb2-9d5b-4f35-ba2c-bef329078bc1" alt="Image 2" width="100%" />
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/20810cb2-9d5b-4f35-ba2c-bef329078bc1" width="75%" />
     </td>
   </tr>
   <tr>
-    <td style="text-align: center; border: none;">
-      <p style="text-align: center;">인트로 화면</p>
+    <td align="center" style="border: none;">
+      <p align="center">인트로 화면</p>
     </td>
-    <td style="text-align: center; border: none;">
-      <p style="text-align: center;">메인 화면</p>
+    <td align="center" style="border: none;">
+      <p align="center">메인 화면</p>
     </td>
   </tr>
 </table>
 <br/>
 
 - **상태별 사과 통계**: 분류 작업을 거친 전체/정상/불량 사과의 통계를 그래프로 제공하며, 날짜별 통계 제공
-<table style="width: 100%; border: none; border-spacing: 10px;">
+
+<table>
   <tr>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/543853c6-f063-4930-9cd6-7221351414c1" alt="Image 1" width="100%" />
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/543853c6-f063-4930-9cd6-7221351414c1" width="75%" />
     </td>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/598ad5d9-d7ad-49bc-a2b0-1ef306ba3412" alt="Image 2" width="100%" />
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/598ad5d9-d7ad-49bc-a2b0-1ef306ba3412" width="75%" />
     </td>
   </tr>
   <tr>
-    <td style="text-align: center; border: none;">
-      <p style="text-align: center;">전체 통계</p>
+    <td align="center" style="border: none;">
+      <p align="center">전체 통계</p>
     </td>
-    <td style="text-align: center; border: none;">
-      <p style="text-align: center;">일별 통계</p>
+    <td align="center" style="border: none;">
+      <p align="center">일별 통계</p>
     </td>
   </tr>
 </table>
-
 <br/>
 
 - **분류 데이터 확인**
   - 전체 데이터: DB에 저장된 형식과 동일하게 데이터 개수, 파일명, 저장된 날짜/시간 표시
-<table style="width: 100%; border: none; border-spacing: 10px;">
+
+<table>
   <tr>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/24406ff2-3cf9-4f21-b6b9-b415b2d477ec" alt="Image 1" width="100%" />
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/24406ff2-3cf9-4f21-b6b9-b415b2d477ec" width="75%" />
     </td>
   </tr>
   <tr>
-    <td style="text-align: center; border: none;">
-      <p style="text-align: center;">전체 데이터</p>
+    <td align="center" style="border: none;">
+      <p align="center">전체 데이터</p>
     </td>
   </tr>
 </table>
-</br>
+<br/>
 
    - 정상/불량 데이터: 각각 정상/불량 데이터를 이미지와 파일명으로 표시. 각 항목 선택 시 큰 이미지 확인 가능
-<table style="width: 100%; border: none; border-spacing: 10px;">
+<table>
   <tr>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/3ab95163-a4a8-4781-9cec-530f30851189" alt="Image 1" width="100%" />
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/3ab95163-a4a8-4781-9cec-530f30851189" width="75%" />
     </td>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/de099f6c-eb7c-478b-87f1-d89a423578f9" alt="Image 2" width="100%" />
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/de099f6c-eb7c-478b-87f1-d89a423578f9" width="75%" />
     </td>
   </tr>
   <tr>
-    <td style="text-align: center; border: none;">
-      <p style="text-align: center;">불량 데이터</p>
+    <td align="center" style="border: none;">
+      <p align="center">불량 데이터</p>
     </td>
-    <td style="text-align: center; border: none;">
-      <p style="text-align: center;">항목 선택 시</p>
+    <td align="center" style="border: none;">
+      <p align="center">항목 선택 시</p>
     </td>
   </tr>
 </table>
-
-
-
-
 <br/>
 
 ## 🔧 Stack
