@@ -25,18 +25,18 @@ https://github.com/user-attachments/assets/c9e87c14-217e-42b2-b99c-264e4906792c
 <table style="width: 100%; border: none; border-spacing: 10px;">
   <tr>
     <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/4acc02cd-dc4b-4b19-86c7-45bedd9d961b" alt="Image 1" width="100%" />
+      <img src="https://github.com/user-attachments/assets/575e07b7-aceb-4565-993a-a0b871bf5663" alt="Image 1" width="100%" />
     </td>
     <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 2" width="100%" />
+      <img src="https://github.com/user-attachments/assets/20810cb2-9d5b-4f35-ba2c-bef329078bc1" alt="Image 2" width="100%" />
     </td>
   </tr>
   <tr>
     <td style="text-align: center; border: none;">
-      <p style="text-align: center;">전체 통계</p>
+      <p style="text-align: center;">인트로 화면</p>
     </td>
     <td style="text-align: center; border: none;">
-      <p style="text-align: center;">일별 통계</p>
+      <p style="text-align: center;">메인 화면</p>
     </td>
   </tr>
 </table>
@@ -46,10 +46,10 @@ https://github.com/user-attachments/assets/c9e87c14-217e-42b2-b99c-264e4906792c
 <table style="width: 100%; border: none; border-spacing: 10px;">
   <tr>
     <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/9368ad82-3c92-45b4-896d-f5fad2236555" alt="Image 1" width="100%" />
+      <img src="https://github.com/user-attachments/assets/543853c6-f063-4930-9cd6-7221351414c1" alt="Image 1" width="100%" />
     </td>
     <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/4ea0a1a6-5f78-48c0-993b-137f9b757787" alt="Image 2" width="100%" />
+      <img src="https://github.com/user-attachments/assets/598ad5d9-d7ad-49bc-a2b0-1ef306ba3412" alt="Image 2" width="100%" />
     </td>
   </tr>
   <tr>
@@ -64,22 +64,38 @@ https://github.com/user-attachments/assets/c9e87c14-217e-42b2-b99c-264e4906792c
 
 <br/>
 
-- **이미지 데이터 및 정확도 확인**: 촬영된 사과 이미지 목록에서 각 항목 선택 시 큰 이미지를 확인할 수 있음
+- **분류 데이터 확인**
+  - 전체 데이터: DB에 저장된 형식과 동일하게 데이터 개수, 파일명, 저장된 날짜/시간 표시
 <table style="width: 100%; border: none; border-spacing: 10px;">
   <tr>
     <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/8d5bfd20-86aa-449e-9675-bd3795bb75c3" alt="Image 1" width="100%" />
-    </td>
-    <td style="text-align: center; width: 50%; border: none;">
-      <img src="https://github.com/user-attachments/assets/2299569a-0c7b-4fae-af66-848015c9868a" alt="Image 2" width="100%" />
+      <img src="https://github.com/user-attachments/assets/24406ff2-3cf9-4f21-b6b9-b415b2d477ec" alt="Image 1" width="100%" />
     </td>
   </tr>
   <tr>
     <td style="text-align: center; border: none;">
-      <p style="text-align: center;">전체 통계</p>
+      <p style="text-align: center;">전체 데이터</p>
+    </td>
+  </tr>
+</table>
+</br>
+
+   - 정상/불량 데이터: 각각 정상/불량 데이터를 이미지와 파일명으로 표시. 각 항목 선택 시 큰 이미지 확인 가능
+<table style="width: 100%; border: none; border-spacing: 10px;">
+  <tr>
+    <td style="text-align: center; width: 50%; border: none;">
+      <img src="https://github.com/user-attachments/assets/3ab95163-a4a8-4781-9cec-530f30851189" alt="Image 1" width="100%" />
+    </td>
+    <td style="text-align: center; width: 50%; border: none;">
+      <img src="https://github.com/user-attachments/assets/de099f6c-eb7c-478b-87f1-d89a423578f9" alt="Image 2" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center; border: none;">
+      <p style="text-align: center;">불량 데이터</p>
     </td>
     <td style="text-align: center; border: none;">
-      <p style="text-align: center;">일별 통계</p>
+      <p style="text-align: center;">항목 선택 시</p>
     </td>
   </tr>
 </table>
